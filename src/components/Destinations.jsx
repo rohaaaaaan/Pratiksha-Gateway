@@ -7,7 +7,7 @@ const destinationsData = [
     {
         id: 1,
         title: 'Kashmir',
-        image: '/assets/images/kashmir/cover.jpg',
+        image: `${import.meta.env.BASE_URL}assets/images/kashmir/cover.jpg`,
         desc: 'Paradise on Earth',
         duration: '5 Days',
         price: '₹18,999',
@@ -17,7 +17,7 @@ const destinationsData = [
     {
         id: 2,
         title: 'Uttarakhand',
-        image: '/assets/images/uttarakhand/cover.jpg',
+        image: `${import.meta.env.BASE_URL}assets/images/uttarakhand/cover.jpg`,
         desc: 'Land of Gods',
         duration: '6 Days',
         price: '₹14,500',

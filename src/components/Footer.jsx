@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-content">
                 <div className="footer-brand">
-                    <h3>Pratiksha-Gateaway</h3>
+                    <h3>Pratiksha-Getaway</h3>
                     <p>Curating unforgettable journeys across India.</p>
                 </div>
                 <div className="footer-links">
@@ -28,7 +28,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} Pratiksha-Gateaway. All rights reserved.</p>
+                <p>&copy; {new Date().getFullYear()} Pratiksha-Getaway. All rights reserved.</p>
             </div>
         </footer>
     );

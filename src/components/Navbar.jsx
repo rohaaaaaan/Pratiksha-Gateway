@@ -32,7 +32,7 @@ const Navbar = () => {
         >
             <div className="navbar-container">
                 <Link to="/" className="navbar-logo" onMouseEnter={() => playSound('hover')}>
-                    Pratiksha-Gateway
+                    Pratiksha-Getaway
                 </Link>
                 <div className="menu-icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
                     {mobileMenuOpen ? <FaTimes /> : <FaBars />}

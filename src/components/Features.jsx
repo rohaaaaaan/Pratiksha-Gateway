@@ -31,7 +31,7 @@ const Features = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                 >
-                    <h2>Why Choose Pratiksha-Gateaway</h2>
+                    <h2>Why Choose Pratiksha-Getaway</h2>
                 </motion.div>
 
                 <div className="features-grid">

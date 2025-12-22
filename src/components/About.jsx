@@ -21,7 +21,7 @@ const About = () => {
         {
             year: '2019',
             title: 'Building the Dream',
-            desc: 'Founded Pratiksha\'s Gateway to share authentic travel experiences.'
+            desc: 'Founded Pratiksha\'s Getaway to share authentic travel experiences.'
         },
         {
             year: '2021',
@@ -118,7 +118,7 @@ const About = () => {
                                 <span className="highlight"> Spoiler: It does.</span>
                             </p>
                             <p>
-                                At <strong>Pratiksha's Gateway</strong>, I don't just plan trips — I craft
+                                At <strong>Pratiksha's Getaway</strong>, I don't just plan trips — I craft
                                 experiences. Every itinerary is personally curated with love, local insights,
                                 and those secret spots that Google Maps doesn't know about. 🗺️
                             </p>

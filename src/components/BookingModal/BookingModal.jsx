@@ -48,7 +48,7 @@ const BookingModal = () => {
 
     const handleWhatsApp = () => {
         const phone = '919075679521'; // Pratiksha's Gateway Official Number
-        let message = `Hi Pratiksha-Gateway! 👋 I'm interested in `;
+        let message = `Hi Pratiksha-Getaway! 👋 I'm interested in `;
 
         if (selectedDest.id === 'custom') {
             message += `a *Custom Trip* to *${customDestinationName || 'a destination not listed'}*. `;
