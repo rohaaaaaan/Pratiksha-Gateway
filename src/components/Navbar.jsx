@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './Navbar.css';
@@ -10,6 +11,7 @@ import { useBooking } from '../context/BookingContext';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const { isMuted, toggleMute, playSound } = useSound();
     const { openBooking } = useBooking();
 
@@ -32,7 +34,10 @@ const Navbar = () => {
                 <Link to="/" className="navbar-logo" onMouseEnter={() => playSound('hover')}>
                     Pratiksha-Gateway
                 </Link>
-                <ul className="nav-menu">
+                <div className="menu-icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+                    {mobileMenuOpen ? <FaTimes /> : <FaBars />}
+                </div>
+                <ul className={mobileMenuOpen ? 'nav-menu active' : 'nav-menu'}>
                     <li className="nav-item">
                         <Link to="/" className="nav-link" onMouseEnter={() => playSound('hover')}>Home</Link>
                     </li>
@@ -43,7 +48,10 @@ const Navbar = () => {
                         <a href="#about" className="nav-link" onMouseEnter={() => playSound('hover')}>About</a>
                     </li>
                     <li className="nav-item">
-                        <button className="nav-link-btn" onClick={() => openBooking()} onMouseEnter={() => playSound('hover')}>Book Now</button>
+                        <button className="nav-link-btn" onClick={() => {
+                            openBooking();
+                            setMobileMenuOpen(false);
+                        }} onMouseEnter={() => playSound('hover')}>Book Now</button>
                     </li>
                     <li className="nav-item">
                         <button className="sound-toggle" onClick={toggleMute}>
