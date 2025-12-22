@@ -10,7 +10,7 @@ function App() {
   return (
     <SoundProvider>
       <BookingProvider>
-        <Router basename="/Pratiksha-Gateway">
+        <Router basename={import.meta.env.BASE_URL}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/destination/:id" element={<DestinationDetails />} />
