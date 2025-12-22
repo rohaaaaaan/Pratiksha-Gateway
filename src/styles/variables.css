@@ -1,0 +1,23 @@
+:root {
+  /* Colors */
+  --color-primary: #1a472a; /* Deep Forest Green - representing the lush valleys */
+  --color-secondary: #e27d60; /* Sunset Orange - warmth of Rajasthan/Sunsets */
+  --color-accent: #d4a373; /* Earthy Gold - Royal feel */
+  --color-surface: #ffffff; /* Pure White */
+  --color-background: #f4f4f4; /* Misty Gray */
+  --color-text-main: #2c3e50;
+  --color-text-light: #ecf0f1;
+  
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+  /* Typography */
+  --font-heading: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Transitions */
+  --transition-fast: 0.3s ease;
+  --transition-slow: 0.6s ease;
+}

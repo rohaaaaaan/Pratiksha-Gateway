@@ -1,0 +1,108 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    background: transparent;
+}
+
+.navbar.scrolled {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    height: 70px;
+}
+
+.navbar-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-surface);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar.scrolled .navbar-logo {
+    color: var(--color-primary);
+    text-shadow: none;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: var(--color-surface);
+    font-weight: 500;
+    transition: color 0.3s;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.scrolled .nav-link {
+    color: var(--color-text-main);
+    text-shadow: none;
+}
+
+.nav-link:hover {
+    color: var(--color-accent);
+}
+
+.nav-link-btn {
+    padding: 0.6rem 1.5rem;
+    background: var(--color-secondary);
+    color: white;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: transform 0.3s, background 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-link-btn:hover {
+    background: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.sound-toggle {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.navbar.scrolled .sound-toggle {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--color-text-main);
+}
+
+.sound-toggle:hover {
+    transform: scale(1.1);
+    background: var(--color-secondary);
+    color: white;
+}
