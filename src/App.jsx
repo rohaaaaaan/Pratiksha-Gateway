@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import DestinationDetails from './pages/DestinationDetails';
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <SoundProvider>
       <BookingProvider>
-        <Router basename={import.meta.env.BASE_URL}>
+        <Router>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/destination/:id" element={<DestinationDetails />} />
