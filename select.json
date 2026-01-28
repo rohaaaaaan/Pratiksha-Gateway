@@ -1,0 +1,14 @@
+{
+  "name": "Travel Website",
+  "version": "1.0.0",
+  "category": "design",
+  "tagline": "Test",
+  "description": "Test",
+  "icon": "🚀",
+  "platforms": [
+    "web"
+  ],
+  "badges": [
+    "opensource"
+  ]
+}
