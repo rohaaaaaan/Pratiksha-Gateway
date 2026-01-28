@@ -1,9 +1,9 @@
 {
-  "name": "Travel Website",
+  "name": "Travel website",
   "version": "1.0.0",
   "category": "design",
-  "tagline": "Test",
-  "description": "Test",
+  "tagline": "travel",
+  "description": "travel",
   "icon": "🚀",
   "platforms": [
     "web"
